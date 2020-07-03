@@ -11,10 +11,11 @@
       crossorigin="anonymous"
     />
     <title>ITSP {% block title %}{% endblock %}</title>
+    {% include 'ITSP/partials/_navbar.html' %}
   </head>
   <body>
     <!-- NavBar -->
-    {% include 'ITSP/partials/_navbar.html' %}
+
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto">
