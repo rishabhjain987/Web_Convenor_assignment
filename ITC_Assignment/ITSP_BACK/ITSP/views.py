@@ -15,8 +15,7 @@ def itsp_home(request):
 
 
 def dynamic_view(request, my_id):
-    # obj = get_object_or_404(itsp_team, id=my_id)
-    obj = itsp_team.objects.filter(Team_ID=my_id)
+    obj = get_object_or_404(itsp_team, Team_ID=my_id)
     context = {
         'object': obj
     }
